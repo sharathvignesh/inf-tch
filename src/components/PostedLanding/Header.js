@@ -5,26 +5,51 @@ import { browserHistory } from 'react-router'
 
 class Header extends Component {
   constructor (props) {
-    super(props)
-    this.handleError = this.logout.bind(this)
+    super(props);
+    this.state = {
+       mobileNavFlag: false,
+     }
+    this.mobileNav = this.mobileNav.bind(this);
+    this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
   }
-  logout () {
-    localStorage.clear()
-    browserHistory.push('/')
+
+  toggleMobileMenu=()=>{
+    console.log("setnavflag");
+    this.setState({mobileNavFlag: !this.state.mobileNavFlag})
   }
+  mobileNav () {
+    console.log("nav bar");
+    return (<div><ul id='mobilenav'>
+      <li><Link to='/'>HOME</Link></li>
+      <li><Link to='/'>ABOUT US</Link></li>
+      <li><Link to='/'>INDUSTRIES</Link></li>
+      <li><Link to='/'>SERVICES</Link></li>
+      <li><Link to='/'>CONTACT US</Link></li>
+    </ul></div>);
+  }
+
   render () {
     var contents
-      contents = <ul className='navigation'>
+      contents = <div>
+      <ul className='navigation'>
         <li className=''><Link to='/'>HOME</Link></li>
         <li className=''><Link to='/'>ABOUT US</Link></li>
         <li className=''><Link to='/'>INDUSTRIES</Link></li>
         <li className=''><Link to='/'>SERVICES</Link></li>
         <li className=''><Link to='/' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
+      <div className='navigation-mobile'>
+        <span className='' onClick={this.toggleMobileMenu} style={{'paddingRight': '2em'}}><Link to='/'>&#9776;</Link></span>
+      </div>
+
+    </div>
     return (
+      <div>
       <div id='fr-header'>
         <h1><a href='/'><img src={require('./infotech_logo.png')} alt='logo' /></a></h1>
         {contents}
+      </div>
+      {this.state.mobileNavFlag ? this.mobileNav() : null}
       </div>
     )
   }
