@@ -313,6 +313,27 @@ footer ul li a:hover {
     width: 100%;
     padding-top: 40px;
   }
+
+  body #tech-wrapper .testimony-card {
+    width: 100%;
+    box-shadow: rgba(125, 122, 122, 0.19) 0px 2px 20px, rgba(243, 240, 240, 0.23) 0px 6px 6px;
+    margin: 0px auto;
+  }
+  body #tech-wrapper .testimony-card .testimony-client-details {
+     padding: 30px 0 0 ;
+  }
+
+  body #tech-wrapper .testimony-card p {
+    font-size: 20px;
+    line-height: 33px;
+    /* padding: 26px; */
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1px;
+}
+  body #tech-wrapper .testimony-card i {
+      display: none;
+  }
 }
 
 /* content */
@@ -368,3 +389,37 @@ footer ul li a:hover {
   height: 90px;
 }
 /* end of customer */
+/* testimonial */
+#tech-wrapper .testimony-card {
+  margin: 0 auto;
+  width: 70%;
+  box-shadow: 0 2px 20px rgba(125, 122, 122, 0.19), 0 6px 6px rgba(243, 240, 240, 0.23);
+}
+
+#tech-wrapper .testimony-card p{
+font-size: 20px;
+line-height: 33px;
+/* padding: 26px; */
+padding-left: 6em;
+padding-bottom: 1em;
+}
+
+#tech-wrapper .testimony-card h5{
+  color: rgb(117, 115, 115);
+}
+#tech-wrapper .testimony-card img{
+  height: 70px;
+  float: left;
+  border-radius: 50%;
+  padding-right: 10px;
+
+}
+#tech-wrapper .testimony-card i {
+  font-size: 50px;
+  float: left;
+  padding-left: 40px;
+}
+#tech-wrapper .testimony-card .testimony-client-details {
+  padding: 40px 40px 0 40px;
+}
+/* end of testimonial */
