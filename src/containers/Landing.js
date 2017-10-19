@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import postedStyle from '../Styles/landing.css';
 import Header from '../components/PostedLanding/Header';
 import Tech from '../components/PostedLanding/Technologies';
+import Customers from '../components/PostedLanding/Customers';
+import Testimony from '../components/PostedLanding/Testimony';
 import Banner from '../components/PostedLanding/Banner';
 import Footer from '../components/PostedLanding/Footer';
 import $ from 'jquery';
@@ -52,6 +54,10 @@ componentDidMount(){
         <br />
         <div id='content-wrapper'>
           <Tech />
+          <br /><br />
+          <Customers />
+          <br /><br />
+          <Testimony />
         </div>
         <br />
         <Footer />

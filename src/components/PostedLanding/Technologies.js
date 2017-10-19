@@ -29,6 +29,9 @@ class Tech extends Component {
                 <h5>Big data analytics specialists.</h5>
               </div>
            </div>
+           <br />
+           <br />
+           <hr />
         </div>
     )
   }
