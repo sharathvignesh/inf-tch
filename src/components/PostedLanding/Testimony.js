@@ -40,8 +40,6 @@ class Testimony extends Component {
                   </p>
                 </div>
            </div>
-           <br />
-           <hr />
         </div>
     )
   }
