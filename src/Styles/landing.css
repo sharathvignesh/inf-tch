@@ -1,20 +1,21 @@
 @font-face {
-  font-family: 'sanfrancisco-regular';
-  src: url("fonts/sanfrancisco-regular.woff");
+  font-family: 'nunito-extra-light';
+  src: url("fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf");
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'sf-display';
-  src: url("fonts/sf-display-regular.woff");
-  font-weight: normal;
-  font-style: normal; }
+  @font-face {
+    font-family: 'nunito-light';
+    src: url("fonts/Nunito_Sans/NunitoSans-Light.ttf");
+    font-weight: normal;
+    font-style: normal; }
 
-@font-face {
-  font-family: 'sf-text';
-  src: url("fonts/sf-text-regular.otf");
-  font-weight: normal;
-  font-style: normal; }
+  @font-face {
+    font-family: 'nunito-regular';
+    src: url("fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal; }
+
 
 * {
     margin: 0;
@@ -37,7 +38,7 @@ a:hover {
 }
 
 body {
-    font-family: 'sf-text', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'nunito-light', 'Helvetica', 'Arial', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -166,6 +167,7 @@ footer {
     padding: 60px 0px;
     color: #999999;
     align-items: center;
+    margin-top: 50px;
 }
 
 footer ul li {
@@ -270,7 +272,7 @@ footer ul li a:hover {
   #fr-wrapper {
       /*width: calc(100% - 20px);*/
       margin: 0 auto;
-      width: fit-content;
+      /*width: fit-content;*/
       /*padding-right: 1rem;
       padding-left: 1rem;*/
       overflow-x: hidden;
@@ -282,3 +284,53 @@ footer ul li a:hover {
     font-weight: 900;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  body #tech-wrapper .tech-logo-row .tech-logo-col {
+    width: inherit;
+        padding-bottom: 50px;
+  }
+}
+
+/* content */
+#fr-wrapper #content-wrapper {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 25px;
+}
+
+#fr-wrapper #content-wrapper p {
+  font-size: 20px;
+  line-height: 39px;
+}
+
+#fr-wrapper #content-wrapper h1{
+    font-family: 'nunito-extra-light';
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+/* tech */
+#fr-wrapper #content-wrapper #tech-wrapper {
+  text-align: -webkit-left;
+}
+
+#tech-wrapper .tech-logo-row {
+  text-align: -webkit-center;
+  width: 100%;
+}
+
+#tech-wrapper .tech-logo-row .tech-logo-col{
+  display: inline-block;
+  width: 33.3%;
+}
+
+.tech-logo-col img {
+  height: 100px;
+}
+.tech-logo-col h5 {
+  color: rgb(117, 115, 115);
+  width: 50%;
+}
+
+/* end of tech */

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import postedStyle from '../Styles/landing.css';
 import Header from '../components/PostedLanding/Header';
+import Tech from '../components/PostedLanding/Technologies';
 import Banner from '../components/PostedLanding/Banner';
 import Footer from '../components/PostedLanding/Footer';
 import $ from 'jquery';
@@ -48,6 +49,11 @@ componentDidMount(){
       <div className='frontpage' id='fr-wrapper'>
         <Header />
         <Banner />
+        <br />
+        <div id='content-wrapper'>
+          <Tech />
+        </div>
+        <br />
         <Footer />
       </div>
     )
