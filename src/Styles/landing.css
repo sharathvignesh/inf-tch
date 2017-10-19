@@ -82,6 +82,14 @@ ul, ol {
     list-style-position: inside;
 }
 
+hr{
+  display: block;
+  /* height: 8px; */
+  /* border: 0; */
+  border-top: 1px solid #e0e0e0;
+  margin: 1em 0;
+  padding: 0;
+}
 body .frontpage {
     margin: 0;
     text-align: center;
@@ -283,12 +291,27 @@ footer ul li a:hover {
     color: white;
     font-weight: 900;
   }
+  body #fr-wrapper #content-wrapper {
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 25px;
+  }
+  body #tech-wrapper .tech-logo-row .customer-logo-col {
+    display: inline-block;
+    width: 50%;
+    padding-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   body #tech-wrapper .tech-logo-row .tech-logo-col {
     width: inherit;
         padding-bottom: 50px;
+  }
+  body #tech-wrapper .tech-logo-row .customer-logo-col {
+    display: inline-block;
+    width: 100%;
+    padding-top: 40px;
   }
 }
 
@@ -334,3 +357,14 @@ footer ul li a:hover {
 }
 
 /* end of tech */
+/* customer */
+#tech-wrapper .tech-logo-row .customer-logo-col {
+  display: inline-block;
+  width: 25%;
+  padding-top: 40px;
+}
+
+.customer-logo-col img {
+  height: 90px;
+}
+/* end of customer */
