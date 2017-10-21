@@ -171,11 +171,25 @@ body .frontpage {
 /* Footer */
 
 footer {
-    font-size: 14px;
-    padding: 60px 0px;
-    color: #999999;
-    align-items: center;
-    margin-top: 50px;
+  font-size: 14px;
+  padding: 40px 0px;
+  height: 140px;
+  color: white;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+  background: black;
+}
+
+footer .footer-left {
+  float: left;
+  text-align: left;
+  padding-left: 5em;
+}
+
+footer .footer-right {
+  float: right;
+  padding-right: 5em;
 }
 
 footer ul li {
@@ -237,12 +251,13 @@ footer ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     top: 7em;
+    background: rgba(255, 248, 248, 0.95);
   }
   #mobilenav a{
     color: rgba(0,0,0,0.64);
   }
   #mobilenav li{
-    line-height: 50px;
+    line-height: 75px;
   }
   #fr-header h1 a img {
       height: 40px;
@@ -313,6 +328,44 @@ footer ul li a:hover {
     width: 100%;
     padding-top: 40px;
   }
+
+  body #tech-wrapper .testimony-card {
+    width: 100%;
+    box-shadow: rgba(125, 122, 122, 0.19) 0px 2px 20px, rgba(243, 240, 240, 0.23) 0px 6px 6px;
+    margin: 0px auto;
+  }
+  body #tech-wrapper .testimony-card .testimony-client-details {
+     padding: 30px 0 0 ;
+  }
+
+  body #tech-wrapper .testimony-card p {
+    font-size: 20px;
+    line-height: 33px;
+    /* padding: 26px; */
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1px;
+}
+  body #tech-wrapper .testimony-card i {
+      display: none;
+  }
+  body .hero h1 {
+    margin-top: 49%;
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+    padding: 0 40px;
+  }
+  footer .footer-left {
+    float: left;
+    text-align: left;
+    padding-left: 1em;
+  }
+
+  footer .footer-right {
+    float: right;
+    padding-right: 1em;
+  }
 }
 
 /* content */
@@ -368,3 +421,37 @@ footer ul li a:hover {
   height: 90px;
 }
 /* end of customer */
+/* testimonial */
+#tech-wrapper .testimony-card {
+  margin: 0 auto;
+  width: 70%;
+  box-shadow: 0 2px 20px rgba(125, 122, 122, 0.19), 0 6px 6px rgba(243, 240, 240, 0.23);
+}
+
+#tech-wrapper .testimony-card p{
+font-size: 20px;
+line-height: 33px;
+/* padding: 26px; */
+padding-left: 6em;
+padding-bottom: 1em;
+}
+
+#tech-wrapper .testimony-card h5{
+  color: rgb(117, 115, 115);
+}
+#tech-wrapper .testimony-card img{
+  height: 70px;
+  float: left;
+  border-radius: 50%;
+  padding-right: 10px;
+
+}
+#tech-wrapper .testimony-card i {
+  font-size: 50px;
+  float: left;
+  padding-left: 40px;
+}
+#tech-wrapper .testimony-card .testimony-client-details {
+  padding: 40px 40px 0 40px;
+}
+/* end of testimonial */

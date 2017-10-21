@@ -6,13 +6,19 @@ class Footer extends Component {
   render () {
     return (
         <footer>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">What's New</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+          <div>
+            <div className='footer-left'>
+              <h3>Infotech Consultancy</h3>
+              <span>Suite 1D, Level 23, <br />Governor Phillip Tower,<br /> 1 Farrer Place, Sydney <br />NSW, 2000, Australia</span>
+                <br />
+              <h4>+61 421995678</h4>
+              <h4>admin@infotechconsultancy.com.au</h4>
+              <br /><br />
+            </div>
+            <div className='footer-right'>
+              <h5>Infotech Consultancy © 2017, ABN: 89164333322</h5>
+            </div>
+          </div>
         </footer>
     )
   }
