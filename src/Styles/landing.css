@@ -172,12 +172,24 @@ body .frontpage {
 
 footer {
   font-size: 14px;
-  padding: 60px 0px;
+  padding: 40px 0px;
+  height: 140px;
   color: white;
   -ms-flex-align: center;
   align-items: center;
   margin-top: 50px;
   background: black;
+}
+
+footer .footer-left {
+  float: left;
+  text-align: left;
+  padding-left: 5em;
+}
+
+footer .footer-right {
+  float: right;
+  padding-right: 5em;
 }
 
 footer ul li {
