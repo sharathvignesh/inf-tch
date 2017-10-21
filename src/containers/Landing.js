@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import postedStyle from '../Styles/landing.css';
-import Header from '../components/PostedLanding/Header';
+import Header from '../components/Header/Header';
 import Tech from '../components/PostedLanding/Technologies';
 import Customers from '../components/PostedLanding/Customers';
 import Testimony from '../components/PostedLanding/Testimony';
 import Banner from '../components/PostedLanding/Banner';
-import Footer from '../components/PostedLanding/Footer';
+import Footer from '../components/Footer/Footer';
 import $ from 'jquery';
 
 class Landing extends Component {
