@@ -21,7 +21,7 @@ class Header extends Component {
     console.log("nav bar");
     return (<div><ul id='mobilenav'>
       <li><Link to='/'>HOME</Link></li>
-      <li><Link to='/'>ABOUT US</Link></li>
+      <li><Link to='/discover'>DISCOVER</Link></li>
       <li><Link to='/'>INDUSTRIES</Link></li>
       <li><Link to='/'>SERVICES</Link></li>
       <li><Link to='/'>CONTACT US</Link></li>
@@ -33,7 +33,7 @@ class Header extends Component {
       contents = <div>
       <ul className='navigation'>
         <li className=''><Link to='/'>HOME</Link></li>
-        <li className=''><Link to='/'>ABOUT US</Link></li>
+        <li className=''><Link to='/discover'>DISCOVER</Link></li>
         <li className=''><Link to='/'>INDUSTRIES</Link></li>
         <li className=''><Link to='/'>SERVICES</Link></li>
         <li className=''><Link to='/' id='contact_us_header'>CONTACT US</Link></li>

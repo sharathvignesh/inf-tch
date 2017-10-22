@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import postedStyle from '../Styles/landing.css';
 import Header from '../components/Header/Header';
-import Tech from '../components/PostedLanding/Technologies';
-import Customers from '../components/PostedLanding/Customers';
-import Testimony from '../components/PostedLanding/Testimony';
-import Banner from '../components/PostedLanding/Banner';
+import Banner from '../components/About/Banner';
+import Aboutus from '../components/About/Aboutus';
+import Whatwedo from '../components/About/Whatwedo';
 import Footer from '../components/Footer/Footer';
 import $ from 'jquery';
 
@@ -53,11 +52,8 @@ componentDidMount(){
         <Banner />
         <br />
         <div id='content-wrapper'>
-          <Tech />
-          <br /><br />
-          <Customers />
-          <br /><br />
-          <Testimony />
+          <Aboutus />
+          <Whatwedo />
         </div>
         <br />
         <Footer />
