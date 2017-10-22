@@ -1,5 +1,6 @@
 import Base from './components/Base';
 import Landing from './containers/Landing';
+import About from './containers/About';
 
 const routes = {
 	component: Base,
@@ -8,6 +9,10 @@ const routes = {
 			path: '/',
 			component: Landing
 		},
+		{
+			path: '/discover',
+			component: About
+		}
 	]
 };
 
