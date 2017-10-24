@@ -38,7 +38,7 @@ class Header extends Component {
         <li className=''><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
       <div className='navigation-mobile'>
-        <span className='' onClick={this.toggleMobileMenu} style={{'paddingRight': '2em'}}><Link to='/'>&#9776;</Link></span>
+        <span className='' onClick={this.toggleMobileMenu} style={{'paddingRight': '2em'}}><Link>&#9776;</Link></span>
       </div>
 
     </div>
