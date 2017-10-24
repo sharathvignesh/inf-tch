@@ -180,7 +180,10 @@ footer {
   margin-top: 50px;
   background: black;
 }
-
+footer .footer-right i{
+  font-size: 30px;
+  padding-right: 25px;
+}
 footer .footer-left {
   float: left;
   text-align: left;
@@ -378,14 +381,14 @@ footer ul li a:hover {
     padding: 0 40px;
   }
   footer .footer-left {
-    float: left;
-    text-align: left;
-    padding-left: 1em;
+    display: none;
   }
 
-  footer .footer-right {
-    float: right;
-    padding-right: 1em;
+  body footer .footer-right {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    padding-right: 0px;
   }
   body .contact-col{
     width: 100%;
