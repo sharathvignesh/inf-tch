@@ -14,7 +14,6 @@ class Header extends Component {
   }
 
   toggleMobileMenu=()=>{
-    console.log("setnavflag");
     this.setState({mobileNavFlag: !this.state.mobileNavFlag})
   }
   mobileNav () {
@@ -24,7 +23,7 @@ class Header extends Component {
       <li><Link to='/discover'>DISCOVER</Link></li>
       <li><Link to='/'>INDUSTRIES</Link></li>
       <li><Link to='/'>SERVICES</Link></li>
-      <li><Link to='/'>CONTACT US</Link></li>
+      <li><Link to='/contact'>CONTACT US</Link></li>
     </ul></div>);
   }
 
@@ -36,10 +35,10 @@ class Header extends Component {
         <li className=''><Link to='/discover'>DISCOVER</Link></li>
         <li className=''><Link to='/'>INDUSTRIES</Link></li>
         <li className=''><Link to='/'>SERVICES</Link></li>
-        <li className=''><Link to='/' id='contact_us_header'>CONTACT US</Link></li>
+        <li className=''><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
       <div className='navigation-mobile'>
-        <span className='' onClick={this.toggleMobileMenu} style={{'paddingRight': '2em'}}><Link to='/'>&#9776;</Link></span>
+        <span className='' onClick={this.toggleMobileMenu} style={{'paddingRight': '2em'}}><Link>&#9776;</Link></span>
       </div>
 
     </div>

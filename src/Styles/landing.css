@@ -180,7 +180,10 @@ footer {
   margin-top: 50px;
   background: black;
 }
-
+footer .footer-right i{
+  font-size: 30px;
+  padding-right: 25px;
+}
 footer .footer-left {
   float: left;
   text-align: left;
@@ -262,7 +265,7 @@ footer ul li a:hover {
   }
   #mobilenav {
     display: grid;
-    position: absolute;
+    position: fixed;
     list-style-type: none;
     left: 0;
     right: 0;
@@ -334,6 +337,9 @@ footer ul li a:hover {
     width: 50%;
     padding-top: 40px;
   }
+  body .contact-col{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -375,14 +381,45 @@ footer ul li a:hover {
     padding: 0 40px;
   }
   footer .footer-left {
-    float: left;
-    text-align: left;
-    padding-left: 1em;
+    display: none;
   }
 
-  footer .footer-right {
-    float: right;
-    padding-right: 1em;
+  body footer .footer-right {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    padding-right: 0px;
+  }
+  body .contact-col{
+    width: 100%;
+  }
+  body .contact-col form input{
+    width: 80%;
+  }
+  body .contact-col form textarea{
+    width: 80%;
+  }
+  body .contact-col form {
+    padding-left: 1em;
+    padding-right: 1em
+  }
+  body #fr-wrapper #content-wrapper .contact-col h1 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  body #fr-wrapper #content-wrapper h1{
+      font-size: 35px;
+  }
+  body #info-right div h3 {
+    color: white;
+    padding-left: 4em;
+    font-size: 14px;
+  }
+  body #info-right div span{
+        padding-left: 60px;
+  }
+  body #info-right i{
+    padding-left: 1em;
   }
 }
 
@@ -473,3 +510,69 @@ padding-bottom: 1em;
   padding: 40px 40px 0 40px;
 }
 /* end of testimonial */
+/* contact */
+.hero-contact {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.hero-contact img {
+  width: 80%;
+  margin-top: 9em;
+}
+.contact-row {
+  box-shadow: 0 2px 20px rgba(125, 122, 122, 0.19), 0 6px 6px rgba(243, 240, 240, 0.23);
+}
+
+.contact-col{
+  display: inline-block;
+  width: 50%;
+}
+.contact-col h1 {
+  padding-top: 20px;
+}
+#info-right {
+  background: black;
+  text-align: left;
+  height: 550px;
+}
+#info-right h1 {
+  color: white;
+  text-align: center;
+}
+#info-right div h3{
+  color: white;
+  padding-left: 4em;
+}
+#info-right div span{
+  color: white;
+  padding-left: 75px;
+  display: inline-block;
+}
+#info-right i{
+  color: white;
+  position: absolute;
+  padding-left: 2em;
+  margin-top: 4px;
+  font-size: 20px;
+}
+.contact-col form {
+  padding-left: 4em;
+  padding-right: 4em
+}
+.contact-col form input,textarea{
+  width: 65%;
+  border: 0.01em solid #dedede;
+  -webkit-box-shadow: 1px 1px 1px 1px #ffffff;
+  box-shadow: 1px 1px 1px 1px #ffffff;
+  resize: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.contact-col form #submit{
+  color: white;
+  background: black;
+  border-radius: 20px;
+}
+
+/*end of contact*/

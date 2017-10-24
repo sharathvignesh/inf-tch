@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 // import './../Styles/postedLanding.css';
 
 class Footer extends Component {
@@ -16,6 +17,14 @@ class Footer extends Component {
               <br /><br />
             </div>
             <div className='footer-right'>
+              <ul className='navigation'>
+                <li className=''><Link to='/'>HOME</Link></li>
+                <li className=''><Link to='/discover'>DISCOVER</Link></li>
+                <li className=''><Link to='/'>INDUSTRIES</Link></li><br/>
+                <li className=''><Link to='/'>SERVICES</Link></li>
+                <li className=''><Link to='/contact'>CONTACT US</Link></li>
+              </ul><br />
+              <i class="fa fa-facebook-square" aria-hidden="true"></i><i class="fa fa-linkedin-square" aria-hidden="true"></i><br /><br />
               <h5>Infotech Consultancy © 2017, ABN: 89164333322</h5>
             </div>
           </div>
