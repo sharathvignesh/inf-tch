@@ -58,7 +58,7 @@ componentDidMount(){
               <Form />
             </div>
             <div id='info-right' className='contact-col'>
-              <h1>Contact Information</h1>
+              <h1>Contact Information</h1><br /><br />
               <Info />
             </div>
           </div>

@@ -511,9 +511,14 @@ padding-bottom: 1em;
   color: white;
   text-align: center;
 }
-#info-right div h3,p{
+#info-right div h3{
   color: white;
   padding-left: 4em;
+}
+#info-right div span{
+  color: white;
+  padding-left: 75px;
+  display: inline-block;
 }
 #info-right i{
   color: white;
@@ -530,6 +535,7 @@ padding-bottom: 1em;
 .contact-col form input,textarea{
   width: 65%;
   border: 0.01em solid #dedede;
+  -webkit-box-shadow: 1px 1px 1px 1px #ffffff;
   box-shadow: 1px 1px 1px 1px #ffffff;
   resize: none;
   padding: 10px;
