@@ -393,6 +393,34 @@ footer ul li a:hover {
   body .contact-col{
     width: 100%;
   }
+  body .contact-col form input{
+    width: 80%;
+  }
+  body .contact-col form textarea{
+    width: 80%;
+  }
+  body .contact-col form {
+    padding-left: 1em;
+    padding-right: 1em
+  }
+  body #fr-wrapper #content-wrapper .contact-col h1 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  body #fr-wrapper #content-wrapper h1{
+      font-size: 35px;
+  }
+  body #info-right div h3 {
+    color: white;
+    padding-left: 4em;
+    font-size: 14px;
+  }
+  body #info-right div span{
+        padding-left: 60px;
+  }
+  body #info-right i{
+    padding-left: 1em;
+  }
 }
 
 /* content */
@@ -526,7 +554,6 @@ padding-bottom: 1em;
   padding-left: 2em;
   margin-top: 4px;
   font-size: 20px;
-
 }
 .contact-col form {
   padding-left: 4em;
