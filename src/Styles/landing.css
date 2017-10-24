@@ -265,7 +265,7 @@ footer ul li a:hover {
   }
   #mobilenav {
     display: grid;
-    position: absolute;
+    position: fixed;
     list-style-type: none;
     left: 0;
     right: 0;
