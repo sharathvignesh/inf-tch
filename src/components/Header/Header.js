@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-// import '../../Styles/PostedLanding.css';
 import { browserHistory } from 'react-router'
 
 class Header extends Component {
@@ -21,7 +20,7 @@ class Header extends Component {
     return (<div><ul id='mobilenav'>
       <li><Link to='/'>HOME</Link></li>
       <li><Link to='/discover'>DISCOVER</Link></li>
-      <li><Link to='/'>INDUSTRIES</Link></li>
+      <li><Link to='/industries'>INDUSTRIES</Link></li>
       <li><Link to='/'>SERVICES</Link></li>
       <li><Link to='/contact'>CONTACT US</Link></li>
     </ul></div>);
@@ -33,7 +32,7 @@ class Header extends Component {
       <ul className='navigation'>
         <li className=''><Link to='/'>HOME</Link></li>
         <li className=''><Link to='/discover'>DISCOVER</Link></li>
-        <li className=''><Link to='/'>INDUSTRIES</Link></li>
+        <li className=''><Link to='/industries'>INDUSTRIES</Link></li>
         <li className=''><Link to='/'>SERVICES</Link></li>
         <li className=''><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>

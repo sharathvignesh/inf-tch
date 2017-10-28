@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import postedStyle from '../Styles/landing.css';
+import Style from '../Styles/landing.css';
 import Header from '../components/Header/Header';
 import Banner from '../components/Contact/Banner';
 import Form from '../components/Contact/Form';

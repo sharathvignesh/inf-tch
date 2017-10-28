@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import postedStyle from '../Styles/landing.css';
+import Style from '../Styles/landing.css';
 import Header from '../components/Header/Header';
-import Tech from '../components/PostedLanding/Technologies';
-import Customers from '../components/PostedLanding/Customers';
-import Testimony from '../components/PostedLanding/Testimony';
-import Banner from '../components/PostedLanding/Banner';
+import Tech from '../components/Landing/Technologies';
+import Customers from '../components/Landing/Customers';
+import Testimony from '../components/Landing/Testimony';
+import Banner from '../components/Landing/Banner';
 import Footer from '../components/Footer/Footer';
 import $ from 'jquery';
 
