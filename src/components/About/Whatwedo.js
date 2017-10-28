@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import './../Styles/postedLanding.css';
 
 class Whatwedo extends Component {
 

@@ -243,7 +243,7 @@ footer ul li a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 30vh;
+  height: 35vh;
 }
 .hero-other-pages h1{
   font-size: 67px;
@@ -422,6 +422,35 @@ footer ul li a:hover {
   body #info-right i{
     padding-left: 1em;
   }
+
+  body #tech-wrapper .branches-card {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    /* padding: 10px; */
+    margin-left: 0;
+    margin-right: 0;
+    display: -ms-inline-flexbox;
+    /* display: inline-flex; */
+    text-align: -webkit-center;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 20px rgba(125, 122, 122, 0.19), 0 6px 6px rgba(243, 240, 240, 0.23);
+    box-shadow: 0 2px 20px rgba(125, 122, 122, 0.19), 0 6px 6px rgba(243, 240, 240, 0.23);
+    }
+
+    body #tech-wrapper .branches-card a{
+      display: block;
+      text-align: center;
+      padding-right: 0px;
+      margin-bottom: 15px;
+    }
+
+    body .hero-industries h1 {
+    font-size: 54px;
+    color: white;
+    font-weight: 900;
+    margin-top: 34%;
+    }
 }
 
 /* content */
@@ -577,3 +606,103 @@ padding-bottom: 1em;
 }
 
 /*end of contact*/
+/* industries */
+
+/* end of industries */
+#tech-wrapper .branches-card {
+  border-radius: 10px;
+  padding-left: 25px;
+  margin: 25px;
+  display: inline-flex;
+  text-align: -webkit-left;
+  width: 42%;
+  box-shadow: 0 2px 20px rgba(125, 122, 122, 0.19), 0 6px 6px rgba(243, 240, 240, 0.23);
+}
+
+#tech-wrapper .branches-card p{
+font-size: 20px;
+line-height: 33px;
+/* padding: 26px; */
+/*padding-left: 6em;
+padding-bottom: 1em;*/
+}
+
+#tech-wrapper #banking {
+  background-image: url('img/industries/Bank.png');
+  background-size: cover;
+}
+
+#tech-wrapper #tech {
+  background-image: url('img/industries/tele.png');
+  background-size: cover;
+}
+
+#tech-wrapper #insurance {
+  background-image: url('img/industries/Insurance.png');
+  background-size: cover;
+}
+
+#tech-wrapper #retail {
+  background-image: url('img/industries/Retail.png');
+  background-size: cover;
+}
+
+#tech-wrapper #airport {
+  background-image: url('img/industries/Travel.png');
+  background-size: cover;
+}
+
+#tech-wrapper #public-service {
+  background-image: url('img/industries/Pub.png');
+  background-size: cover;
+}
+
+#tech-wrapper .branches-card h2{
+  color: white;
+  font-weight: 900;
+}
+
+#tech-wrapper .branches-card h3 {
+  text-align: -webkit-center;
+  padding-right: 25px;
+  margin-bottom: 20px;
+}
+
+#tech-wrapper .branches-card a{
+  display: block;
+  text-align: center;
+  padding-right: 25px;
+  margin-bottom: 15px;
+}
+
+#tech-wrapper .branches-card a span{
+  border: 1px solid white;
+  padding: 5px 30px;
+  background: white;
+  color: black;
+  border-radius: 30px;
+}
+
+#tech-wrapper .branches-card a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-industries {
+  padding: 60px 0px;
+  color: #999999;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./img/industries/bg.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 35vh;
+}
+.hero-industries h1{
+  font-size: 67px;
+  color: white;
+  font-weight: 900;
+  margin-top: 10%;
+}
