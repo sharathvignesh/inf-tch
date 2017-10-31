@@ -706,3 +706,75 @@ padding-bottom: 1em;*/
   font-weight: 900;
   margin-top: 10%;
 }
+.hero-insurance {
+  padding: 60px 0px;
+  color: #999999;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./img/industries/Insurance.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 35vh;
+}
+.hero-banking {
+  padding: 60px 0px;
+  color: #999999;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./img/industries/Bank.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 35vh;
+}
+.hero-public {
+  padding: 60px 0px;
+  color: #999999;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./img/industries/Pub.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 35vh;
+}
+.hero-retail {
+  padding: 60px 0px;
+  color: #999999;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./img/industries/Retail.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 35vh;
+}
+.hero-tech {
+  padding: 60px 0px;
+  color: #999999;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./img/industries/tele.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 35vh;
+}
+.hero-travel {
+  padding: 60px 0px;
+  color: #999999;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./img/industries/Travel.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 35vh;
+}

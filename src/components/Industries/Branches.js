@@ -16,7 +16,7 @@ class Branches extends Component {
                       services to provide guidance to help achieve their personal
                       and professional goals.
                     </p>
-                    <Link><span>Learn more</span></Link>
+                    <Link to='industries/banking'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='tech'>
@@ -27,7 +27,7 @@ class Branches extends Component {
                       implement and optimize digital engagement with data insights at
                       every customer touchpoint.
                     </p>
-                    <Link><span>Learn more</span></Link>
+                    <Link to='industries/technology'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='insurance'>
@@ -38,7 +38,7 @@ class Branches extends Component {
                       Customers expect financial services to provide guidance to help achieve
                       their personal and professional goals.
                     </p>
-                    <Link><span>Learn more</span></Link>
+                    <Link to='industries/insurance'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='retail'>
@@ -49,7 +49,7 @@ class Branches extends Component {
                       from anywhere – beyond the point of sale. Our expertise streamlines
                       processes and systems, so you can provide a seamless customer experience.
                     </p>
-                    <Link><span>Learn more</span></Link>
+                    <Link to='industries/retail'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='airport'>
@@ -60,7 +60,7 @@ class Branches extends Component {
                       it’s critical that companies of all sizes integrate, innovate,
                       and bring new integrated systems to capture and retain market share.
                     </p>
-                    <Link><span>Learn more</span></Link>
+                    <Link to='industries/travel'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='public-service'>
@@ -71,7 +71,7 @@ class Branches extends Component {
                       reliable data access and compliance are critical. Our clients include universities,
                        government offices, utilities, and other public entities.
                     </p>
-                    <Link><span>Learn more</span></Link>
+                    <Link to='industries/public'><span>Learn more</span></Link>
                 </div>
              </div>
            </div>
