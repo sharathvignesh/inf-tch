@@ -20,7 +20,7 @@ class Footer extends Component {
                 <li className=''><Link to='/'>HOME</Link></li>
                 <li className=''><Link to='/discover'>DISCOVER</Link></li>
                 <li className=''><Link to='/industries'>INDUSTRIES</Link></li><br/>
-                <li className=''><Link to='/'>SERVICES</Link></li>
+                <li className=''><Link to='/services'>SERVICES</Link></li>
                 <li className=''><Link to='/contact'>CONTACT US</Link></li>
               </ul><br />
               <i className="fa fa-facebook-square" aria-hidden="true"></i><i className="fa fa-linkedin-square" aria-hidden="true"></i><br /><br />

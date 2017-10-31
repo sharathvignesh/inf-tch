@@ -5,7 +5,7 @@ class Banner extends Component {
   render () {
     return (
         <div className='hero-contact'>
-          <img src={require('./map.png')} alt='logo' />
+          <img id='desk-map' src={require('./map.png')} alt='logo' />
         </div>
     )
   }

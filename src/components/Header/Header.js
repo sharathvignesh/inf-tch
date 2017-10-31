@@ -21,7 +21,7 @@ class Header extends Component {
       <li><Link to='/'>HOME</Link></li>
       <li><Link to='/discover'>DISCOVER</Link></li>
       <li><Link to='/industries'>INDUSTRIES</Link></li>
-      <li><Link to='/'>SERVICES</Link></li>
+      <li><Link to='/services'>SERVICES</Link></li>
       <li><Link to='/contact'>CONTACT US</Link></li>
     </ul></div>);
   }
@@ -33,7 +33,7 @@ class Header extends Component {
         <li className=''><Link to='/'>HOME</Link></li>
         <li className=''><Link to='/discover'>DISCOVER</Link></li>
         <li className=''><Link to='/industries'>INDUSTRIES</Link></li>
-        <li className=''><Link to='/'>SERVICES</Link></li>
+        <li className=''><Link to='/services'>SERVICES</Link></li>
         <li className=''><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
       <div className='navigation-mobile'>

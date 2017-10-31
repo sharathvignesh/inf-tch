@@ -423,6 +423,17 @@ footer ul li a:hover {
     padding-left: 1em;
   }
 
+  body #tech-wrapper .mobile-contact-card{
+    display: block;
+    box-shadow: 0 2px 20px rgba(125, 122, 122, 0.19), 0 6px 6px rgba(243, 240, 240, 0.23);
+  }
+  body #tech-wrapper .mobile-contact-card img{
+    width: 100%;
+  }
+
+  body .hero-contact #desk-map{
+    display: none;
+  }
   body #tech-wrapper .branches-card {
     border-radius: 10px;
     margin-bottom: 10px;
@@ -541,6 +552,9 @@ padding-bottom: 1em;
 }
 /* end of testimonial */
 /* contact */
+#tech-wrapper .mobile-contact-card{
+  display: none;
+}
 .hero-contact {
   padding-left: 5em;
   padding-right: 5em;
@@ -706,6 +720,12 @@ padding-bottom: 1em;*/
   font-weight: 900;
   margin-top: 10%;
 }
+.hero-service h1 {
+  font-size: 67px;
+  color: white;
+  font-weight: 900;
+  margin-top: 10%;
+}
 .hero-insurance {
   padding: 60px 0px;
   color: #999999;
@@ -772,6 +792,18 @@ padding-bottom: 1em;*/
   -ms-flex-align: center;
   align-items: center;
   background: url('./img/industries/Travel.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 35vh;
+}
+.hero-service {
+  padding: 60px 0px;
+  color: #999999;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./img/service.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
