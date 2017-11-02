@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 
-const Base = ({ children }) => (
-  <div>
-    {children}
-  </div>
-);
+
+class Base extends Component {
+  render() {
+    return (
+      <div>
+        {this.props.children}
+      </div>
+    )
+  }
+}
+
 
 Base.propTypes = {
   children: PropTypes.object.isRequired
