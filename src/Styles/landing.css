@@ -139,7 +139,14 @@ body .frontpage {
     float: right;
     padding-right: 5em;
 }
-
+#indus-nav {
+  position: fixed;
+  background: white;
+  margin-top: 100px;
+  padding: 15px;
+  margin-left: 60%;
+  list-style-type: none;
+}
 .navigation-mobile {
     display: none
 }
