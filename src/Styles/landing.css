@@ -145,7 +145,8 @@ body .frontpage {
   background: white;
   margin-top: 100px;
   padding: 15px;
-  margin-left: 60%;
+  /* margin-left: 60%; */
+  width: 100%;
   list-style-type: none;
 }
 .navigation-mobile {
