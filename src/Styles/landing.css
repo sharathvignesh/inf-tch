@@ -132,8 +132,9 @@ body .frontpage {
 
 #fr-header h1 a img{
     padding-left: 5em;
-    height: 50px;
+    height: 60px;
     vertical-align:text-bottom;
+    margin-top: 20px;
 }
 #fr-header ul.navigation {
     float: right;
