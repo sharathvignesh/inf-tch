@@ -281,6 +281,8 @@ footer ul li a:hover {
     margin-right: auto;
     top: 7em;
     background: rgba(255, 248, 248, 0.95);
+    overflow: scroll;
+    height: 70vh;
   }
   #mobilenav a{
     color: rgba(0,0,0,0.64);

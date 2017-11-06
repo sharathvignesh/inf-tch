@@ -7,11 +7,17 @@ class Header extends Component {
     super(props);
     this.state = {
        mobileNavFlag: false,
-       indusNavFlag: false
+       indusNavFlag: false,
+       indsubMenuFlag: false,
+       servsubMenuFlag: false,
+       techsubMenuFlag: false
      }
     this.mobileNav = this.mobileNav.bind(this);
     this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
     this.toggleIndusMenu = this.toggleIndusMenu.bind(this);
+    this.toggleindSubMenu = this.toggleindSubMenu.bind(this);
+    this.toggleservSubMenu = this.toggleservSubMenu.bind(this);
+    this.toggletechSubMenu = this.toggletechSubMenu.bind(this);
   }
 
   toggleIndusMenu=()=>{
@@ -20,17 +26,65 @@ class Header extends Component {
   toggleMobileMenu=()=>{
     this.setState({mobileNavFlag: !this.state.mobileNavFlag})
   }
+  toggleindSubMenu=()=>{
+      this.setState({indsubMenuFlag: !this.state.indsubMenuFlag});
+  }
+  toggleservSubMenu=()=>{
+      this.setState({servsubMenuFlag: !this.state.servsubMenuFlag});
+  }
+  toggletechSubMenu=()=>{
+      this.setState({techsubMenuFlag: !this.state.techsubMenuFlag});
+  }
   mobileNav () {
     console.log("nav bar");
     return (<div><ul id='mobilenav'>
       <li><Link to='/'>HOME</Link></li>
       <li><Link to='/discover'>DISCOVER</Link></li>
-      <li><Link to='/industries'>INDUSTRIES</Link></li>
-      <li><Link to='/services'>SERVICES</Link></li>
+      <li><Link to='/industries'>INDUSTRIES</Link><i onClick={this.toggleindSubMenu} style={{'paddingLeft': '30px'}} className="fa fa-chevron-down" aria-hidden="true"></i></li>
+        {this.state.indsubMenuFlag ? this.showSubMenuMob('ind') : null}
+      <li><Link to='/services'>SERVICES</Link><i onClick={this.toggleservSubMenu} style={{'paddingLeft': '30px'}} className="fa fa-chevron-down" aria-hidden="true"></i></li>
+        {this.state.servsubMenuFlag ? this.showSubMenuMob('serv') : null}
+      <li><Link to='/services'>TECHNOLOGIES</Link><i onClick={this.toggletechSubMenu} style={{'paddingLeft': '30px'}} className="fa fa-chevron-down" aria-hidden="true"></i></li>
+        {this.state.techsubMenuFlag ? this.showSubMenuMob('tech') : null}
       <li><Link to='/contact'>CONTACT US</Link></li>
     </ul></div>);
   }
 
+  showSubMenuMob = (menu) => {
+    if(menu == 'ind') {
+      return (
+        <ul id='indus-nav-mob'>
+          <li><Link to='/'>HOME</Link></li>
+          <li><Link to='/discover'>DISCOVER</Link></li>
+          <li><Link to='/industries'>INDUSTRIES</Link></li>
+          <li><Link to='/services'>SERVICES</Link></li>
+          <li><Link to='/contact'>CONTACT US</Link></li>
+        </ul>
+      );
+    }
+    else if (menu == 'serv') {
+      return (
+        <ul id='indus-nav-serv'>
+          <li><Link to='/'>HOME</Link></li>
+          <li><Link to='/discover'>DISCOVER</Link></li>
+          <li><Link to='/industries'>INDUSTRIES</Link></li>
+          <li><Link to='/services'>SERVICES</Link></li>
+          <li><Link to='/contact'>CONTACT US</Link></li>
+        </ul>
+      );
+    }
+    else if (menu == 'tech') {
+      return (
+        <ul id='indus-nav-tech'>
+          <li><Link to='/'>HOME</Link></li>
+          <li><Link to='/discover'>DISCOVER</Link></li>
+          <li><Link to='/industries'>INDUSTRIES</Link></li>
+          <li><Link to='/services'>SERVICES</Link></li>
+          <li><Link to='/contact'>CONTACT US</Link></li>
+        </ul>
+      );
+    }
+  }
   indusNav () {
     console.log("indus nav bar");
     return (<div onMouseLeave={this.toggleIndusMenu}><ul id='indus-nav'>
