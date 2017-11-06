@@ -39,7 +39,7 @@ class Header extends Component {
     console.log("nav bar");
     return (<div><ul id='mobilenav'>
       <li><Link to='/'>HOME</Link></li>
-      <li><Link to='/discover'>DISCOVER</Link></li>
+      <li><Link to='/discover'>DISCOVER US</Link></li>
       <li><Link to='/industries'>INDUSTRIES</Link><i onClick={this.toggleindSubMenu} style={{'paddingLeft': '30px'}} className="fa fa-chevron-down" aria-hidden="true"></i></li>
         {this.state.indsubMenuFlag ? this.showSubMenuMob('ind') : null}
       <li><Link to='/services'>SERVICES</Link><i onClick={this.toggleservSubMenu} style={{'paddingLeft': '30px'}} className="fa fa-chevron-down" aria-hidden="true"></i></li>
@@ -51,33 +51,33 @@ class Header extends Component {
   }
 
   showSubMenuMob = (menu) => {
-    if(menu == 'ind') {
+    if(menu === 'ind') {
       return (
         <ul id='indus-nav-mob'>
           <li><Link to='/'>HOME</Link></li>
-          <li><Link to='/discover'>DISCOVER</Link></li>
+          <li><Link to='/discover'>DISCOVER US</Link></li>
           <li><Link to='/industries'>INDUSTRIES</Link></li>
           <li><Link to='/services'>SERVICES</Link></li>
           <li><Link to='/contact'>CONTACT US</Link></li>
         </ul>
       );
     }
-    else if (menu == 'serv') {
+    else if (menu === 'serv') {
       return (
         <ul id='indus-nav-serv'>
           <li><Link to='/'>HOME</Link></li>
-          <li><Link to='/discover'>DISCOVER</Link></li>
+          <li><Link to='/discover'>DISCOVER US</Link></li>
           <li><Link to='/industries'>INDUSTRIES</Link></li>
           <li><Link to='/services'>SERVICES</Link></li>
           <li><Link to='/contact'>CONTACT US</Link></li>
         </ul>
       );
     }
-    else if (menu == 'tech') {
+    else if (menu === 'tech') {
       return (
         <ul id='indus-nav-tech'>
           <li><Link to='/'>HOME</Link></li>
-          <li><Link to='/discover'>DISCOVER</Link></li>
+          <li><Link to='/discover'>DISCOVER US</Link></li>
           <li><Link to='/industries'>INDUSTRIES</Link></li>
           <li><Link to='/services'>SERVICES</Link></li>
           <li><Link to='/contact'>CONTACT US</Link></li>
@@ -88,11 +88,12 @@ class Header extends Component {
   indusNav () {
     console.log("indus nav bar");
     return (<div onMouseLeave={this.toggleIndusMenu}><ul id='indus-nav'>
-      <li><Link to='/'>HOME</Link></li>
-      <li><Link to='/discover'>DISCOVER</Link></li>
-      <li><Link to='/industries'>INDUSTRIES</Link></li>
-      <li><Link to='/services'>SERVICES</Link></li>
-      <li><Link to='/contact'>CONTACT US</Link></li>
+      <ul className='navigation'>
+      <li><Link to='/'>BUSINESS</Link></li>
+      <li><Link to='/discover'>RETAIL</Link></li>
+      <li><Link to='/industries'>INSURANCE</Link></li>
+
+      </ul>
     </ul></div>);
   }
 
@@ -101,9 +102,10 @@ class Header extends Component {
       contents = <div>
       <ul className='navigation'>
         <li className=''><Link to='/'>HOME</Link></li>
-        <li className=''><Link to='/discover'>DISCOVER</Link></li>
+        <li className=''><Link to='/discover'>DISCOVER US</Link></li>
         <li className='' onMouseEnter={this.toggleIndusMenu}><Link to='/industries'>INDUSTRIES</Link></li>
         <li className=''><Link to='/services'>SERVICES</Link></li>
+        <li className=''><Link to='/services'>TECHNOLOGIES</Link></li>
         <li className=''><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
       <div className='navigation-mobile'>
