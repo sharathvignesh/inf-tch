@@ -24,11 +24,11 @@ class Footer extends Component {
                 <li className=''><Link to='/contact'>CONTACT US</Link></li>
               </ul>
               <br />
-                  <a class="contactIcons" href="https://www.facebook.com/infotechconsultancy.com.au/">
+                  <a class="contactIcons" href="https://www.facebook.com/infotechconsultancy.com.au/" target="_blank">
                     <i className="fa fa-facebook-square" aria-hidden="true">
                     </i>
                   </a>
-                  <a class="contactIcons" href="https://www.linkedin.com/">
+                  <a class="contactIcons" href="https://www.linkedin.com/" target="_blank">
                     <i className="fa fa-linkedin-square" aria-hidden="true">
                     </i>
                   </a>
