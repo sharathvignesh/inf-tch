@@ -821,3 +821,7 @@ padding-bottom: 1em;*/
   background-size: cover;
   height: 35vh;
 }
+.contactIcons {
+  color: white;
+  cursor: pointer;
+}
