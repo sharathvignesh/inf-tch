@@ -477,6 +477,18 @@ footer ul li a:hover {
     font-weight: 900;
     margin-top: 34%;
     }
+    body .hero-techno h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    margin-top: 34%;
+    }
+    body .hero-service h1 {
+    font-size: 54px;
+    color: white;
+    font-weight: 900;
+    margin-top: 34%;
+    }
 }
 
 /* content */

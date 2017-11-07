@@ -8,6 +8,8 @@ class Header extends Component {
     this.state = {
        mobileNavFlag: false,
        indusNavFlag: false,
+       servNavFlag: false,
+       techNavFlag: false,
        indsubMenuFlag: false,
        servsubMenuFlag: false,
        techsubMenuFlag: false
@@ -15,13 +17,21 @@ class Header extends Component {
     this.mobileNav = this.mobileNav.bind(this);
     this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
     this.toggleIndusMenu = this.toggleIndusMenu.bind(this);
+    this.toggleServMenu = this.toggleServMenu.bind(this);
+    this.toggleTechMenu = this.toggleTechMenu.bind(this);
     this.toggleindSubMenu = this.toggleindSubMenu.bind(this);
     this.toggleservSubMenu = this.toggleservSubMenu.bind(this);
     this.toggletechSubMenu = this.toggletechSubMenu.bind(this);
   }
 
   toggleIndusMenu=()=>{
-    this.setState({indusNavFlag: !this.state.indusNavFlag})
+    this.setState({indusNavFlag: !this.state.indusNavFlag, servNavFlag: false, techNavFlag: false})
+  }
+  toggleServMenu=()=>{
+    this.setState({servNavFlag: !this.state.servNavFlag, indusNavFlag: false, techNavFlag: false})
+  }
+  toggleTechMenu=()=>{
+    this.setState({techNavFlag: !this.state.techNavFlag, indusNavFlag: false, servNavFlag: false})
   }
   toggleMobileMenu=()=>{
     this.setState({mobileNavFlag: !this.state.mobileNavFlag})
@@ -44,7 +54,7 @@ class Header extends Component {
         {this.state.indsubMenuFlag ? this.showSubMenuMob('ind') : null}
       <li><Link to='/services'>SERVICES</Link><i onClick={this.toggleservSubMenu} style={{'paddingLeft': '30px'}} className="fa fa-chevron-down" aria-hidden="true"></i></li>
         {this.state.servsubMenuFlag ? this.showSubMenuMob('serv') : null}
-      <li><Link to='/services'>TECHNOLOGIES</Link><i onClick={this.toggletechSubMenu} style={{'paddingLeft': '30px'}} className="fa fa-chevron-down" aria-hidden="true"></i></li>
+      <li><Link to='/technologies'>TECHNOLOGIES</Link><i onClick={this.toggletechSubMenu} style={{'paddingLeft': '30px'}} className="fa fa-chevron-down" aria-hidden="true"></i></li>
         {this.state.techsubMenuFlag ? this.showSubMenuMob('tech') : null}
       <li><Link to='/contact'>CONTACT US</Link></li>
     </ul></div>);
@@ -54,11 +64,12 @@ class Header extends Component {
     if(menu === 'ind') {
       return (
         <ul id='indus-nav-mob'>
-          <li><Link to='/'>HOME</Link></li>
-          <li><Link to='/discover'>DISCOVER US</Link></li>
-          <li><Link to='/industries'>INDUSTRIES</Link></li>
-          <li><Link to='/services'>SERVICES</Link></li>
-          <li><Link to='/contact'>CONTACT US</Link></li>
+          <li><Link to='/industries/banking'>BANKING</Link></li>
+          <li><Link to='/industries/technology'>TELECOMMUNICATION & TECHNOLOGY</Link></li>
+          <li><Link to='/industries/insurance'>INSURANCE</Link></li>
+          <li><Link to='/industries/retail'>RETAIL</Link></li>
+          <li><Link to='/industries/travel'>TRAVEL</Link></li>
+          <li><Link to='/industries/public'>PUBLIC SERVICES</Link></li>
         </ul>
       );
     }
@@ -68,8 +79,6 @@ class Header extends Component {
           <li><Link to='/'>HOME</Link></li>
           <li><Link to='/discover'>DISCOVER US</Link></li>
           <li><Link to='/industries'>INDUSTRIES</Link></li>
-          <li><Link to='/services'>SERVICES</Link></li>
-          <li><Link to='/contact'>CONTACT US</Link></li>
         </ul>
       );
     }
@@ -79,8 +88,6 @@ class Header extends Component {
           <li><Link to='/'>HOME</Link></li>
           <li><Link to='/discover'>DISCOVER US</Link></li>
           <li><Link to='/industries'>INDUSTRIES</Link></li>
-          <li><Link to='/services'>SERVICES</Link></li>
-          <li><Link to='/contact'>CONTACT US</Link></li>
         </ul>
       );
     }
@@ -98,6 +105,26 @@ class Header extends Component {
       </ul>
     </ul></div>);
   }
+  servNav () {
+    console.log("indus nav bar");
+    return (<div onMouseLeave={this.toggleServMenu}><ul id='indus-nav'>
+      <ul className='navigation' style={{'display': '-webkit-box'}}>
+      <li><Link to='/industries/banking'>BANKING</Link></li>
+      <li><Link to='/industries/insurance'>INSURANCE</Link></li>
+      <li><Link to='/industries/retail'>RETAIL</Link></li>
+      </ul>
+    </ul></div>);
+  }
+  techNav () {
+    console.log("indus nav bar");
+    return (<div onMouseLeave={this.toggleTechMenu}><ul id='indus-nav'>
+      <ul className='navigation' style={{'display': '-webkit-box'}}>
+      <li><Link to='/industries/banking'>BANKING</Link></li>
+      <li><Link to='/industries/insurance'>INSURANCE</Link></li>
+      <li><Link to='/industries/retail'>RETAIL</Link></li>
+      </ul>
+    </ul></div>);
+  }
 
   render () {
     var contents
@@ -106,8 +133,8 @@ class Header extends Component {
         <li className=''><Link to='/'>HOME</Link></li>
         <li className=''><Link to='/discover'>DISCOVER US</Link></li>
         <li className='' onMouseEnter={this.toggleIndusMenu}><Link to='/industries'>INDUSTRIES</Link></li>
-        <li className=''><Link to='/services'>SERVICES</Link></li>
-        <li className=''><Link to='/technologies'>TECHNOLOGIES</Link></li>
+        <li className='' onMouseEnter={this.toggleServMenu}><Link to='/services'>SERVICES</Link></li>
+        <li className='' onMouseEnter={this.toggleTechMenu}><Link to='/technologies'>TECHNOLOGIES</Link></li>
         <li className=''><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
       <div className='navigation-mobile'>
@@ -123,6 +150,8 @@ class Header extends Component {
       </div>
       {this.state.mobileNavFlag ? this.mobileNav() : null}
       {this.state.indusNavFlag ? this.indusNav() : null}
+      {this.state.servNavFlag ? this.servNav() : null}
+      {this.state.techNavFlag ? this.techNav() : null}
       </div>
     )
   }
