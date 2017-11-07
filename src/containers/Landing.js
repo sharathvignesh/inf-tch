@@ -18,14 +18,14 @@ componentDidMount(){
         <Header />
         <Banner />
         <br />
-        <div id='content-wrapper'>      
+        <div id='content-wrapper'>
         <Strategy />
         <br /><br />
           <Tech />
           <br /><br />
           <Customers />
           <br /><br />
-          <Testimony />
+          {/* <Testimony /> */}
         </div>
         <br />
         <Footer />
