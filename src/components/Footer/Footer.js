@@ -9,7 +9,7 @@ class Footer extends Component {
           <div>
             <div className='footer-left'>
               <h3>Infotech Consultancy</h3>
-              <span>Suite 1D, Level 23, <br />Governor Phillip Tower,<br /> 1 Farrer Place, Sydney <br />NSW, 2000, Australia</span>
+              <span>Level 1, Octagon Building,  <br />110 George Street, <br /> Parramatta, NSW. 2150 <br />Australia</span>
                 <br />
               <h4>+61 421995678</h4>
               <h4>admin@infotechconsultancy.com.au</h4>
@@ -22,9 +22,21 @@ class Footer extends Component {
                 <li className=''><Link to='/industries'>INDUSTRIES</Link></li><br/>
                 <li className=''><Link to='/services'>SERVICES</Link></li>
                 <li className=''><Link to='/contact'>CONTACT US</Link></li>
-              </ul><br />
-              <i className="fa fa-facebook-square" aria-hidden="true"></i><i className="fa fa-linkedin-square" aria-hidden="true"></i><br /><br />
+              </ul>
+              <br />
+                  <a class="contactIcons" href="https://www.facebook.com/infotechconsultancy.com.au/" target="_blank">
+                    <i className="fa fa-facebook-square" aria-hidden="true">
+                    </i>
+                  </a>
+                  <a class="contactIcons" href="https://www.linkedin.com/" target="_blank">
+                    <i className="fa fa-linkedin-square" aria-hidden="true">
+                    </i>
+                  </a>
+              <br />
+              <br />
+
               <h5>Infotech Consultancy © 2017, ABN: 89164333322</h5>
+
             </div>
           </div>
         </footer>

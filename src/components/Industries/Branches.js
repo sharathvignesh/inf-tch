@@ -6,7 +6,7 @@ class Branches extends Component {
   render () {
     return (
         <div id='tech-wrapper'>
-          <p>With more than a decade of providing expertise and service, Infotech has established long-term partnerships with clients and customers, who have benefitted from dozens of successfully delivered solutions across diverse industries.</p>
+          <p>Infotech has established long-term partnerships with clients and customers, who have benefitted from dozens of successfully delivered solutions across diverse industries.</p>
            <div className='tech-logo-row'>
              <div className='branches-card' id='banking'>
                 <div>
