@@ -88,11 +88,13 @@ class Header extends Component {
   indusNav () {
     console.log("indus nav bar");
     return (<div onMouseLeave={this.toggleIndusMenu}><ul id='indus-nav'>
-      <ul className='navigation'>
-      <li><Link to='/'>BUSINESS</Link></li>
-      <li><Link to='/discover'>RETAIL</Link></li>
-      <li><Link to='/industries'>INSURANCE</Link></li>
-
+      <ul className='navigation' style={{'display': '-webkit-box'}}>
+      <li><Link to='/industries/banking'>BANKING</Link></li>
+      <li><Link to='/industries/technology'>TELECOMMUNICATION & TECHNOLOGY</Link></li>
+      <li><Link to='/industries/insurance'>INSURANCE</Link></li>
+      <li><Link to='/industries/retail'>RETAIL</Link></li>
+      <li><Link to='/industries/travel'>TRAVEL</Link></li>
+      <li><Link to='/industries/public'>PUBLIC SERVICES</Link></li>
       </ul>
     </ul></div>);
   }
@@ -105,7 +107,7 @@ class Header extends Component {
         <li className=''><Link to='/discover'>DISCOVER US</Link></li>
         <li className='' onMouseEnter={this.toggleIndusMenu}><Link to='/industries'>INDUSTRIES</Link></li>
         <li className=''><Link to='/services'>SERVICES</Link></li>
-        <li className=''><Link to='/services'>TECHNOLOGIES</Link></li>
+        <li className=''><Link to='/technologies'>TECHNOLOGIES</Link></li>
         <li className=''><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
       <div className='navigation-mobile'>

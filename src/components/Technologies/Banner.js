@@ -4,8 +4,8 @@ class Banner extends Component {
 
   render () {
     return (
-        <div className='hero-service'>
-          <h1>SERVICES</h1>
+        <div className='hero-techno'>
+          <h1>TECHNOLOGIES</h1>
         </div>
     )
   }

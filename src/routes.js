@@ -9,6 +9,7 @@ import Public from './containers/Public';
 import Retail from './containers/Retail';
 import Tech from './containers/Tech';
 import Travel from './containers/Travel';
+import Technologies from './containers/Technologies';
 import Services from './containers/Services';
 
 const routes = {
@@ -53,6 +54,10 @@ const routes = {
 		{
 			path: 'industries/public',
 			component: Public
+		},
+		{
+			path: '/technologies',
+			component: Technologies
 		},
 		{
 			path: '/services',

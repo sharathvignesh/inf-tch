@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Style from '../Styles/landing.css';
 import Header from '../components/Header/Header';
-import Banner from '../components/Services/Banner';
-import Content from '../components/Services/Content';
+import Banner from '../components/Technologies/Banner';
+import Content from '../components/Technologies/Content';
 import Footer from '../components/Footer/Footer';
 
-class Services extends Component {
+class Technologies extends Component {
   componentDidMount(){
       window.scrollTo(0, 0)
   }
@@ -25,4 +25,4 @@ class Services extends Component {
   }
 }
 
-export default Services;
+export default Technologies;
