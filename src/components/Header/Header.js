@@ -15,6 +15,7 @@ class Header extends Component {
        techsubMenuFlag: false
      }
     this.mobileNav = this.mobileNav.bind(this);
+    this.toggleFalse = this.toggleFalse.bind(this);
     this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
     this.toggleIndusMenu = this.toggleIndusMenu.bind(this);
     this.toggleServMenu = this.toggleServMenu.bind(this);
@@ -23,7 +24,9 @@ class Header extends Component {
     this.toggleservSubMenu = this.toggleservSubMenu.bind(this);
     this.toggletechSubMenu = this.toggletechSubMenu.bind(this);
   }
-
+  toggleFalse=()=>{
+    this.setState({indusNavFlag: false, servNavFlag: false, techNavFlag: false})
+  }
   toggleIndusMenu=()=>{
     this.setState({indusNavFlag: !this.state.indusNavFlag, servNavFlag: false, techNavFlag: false})
   }
@@ -108,7 +111,7 @@ class Header extends Component {
   servNav () {
     console.log("indus nav bar");
     return (<div onMouseLeave={this.toggleServMenu}><ul id='indus-nav'>
-      <ul className='navigation' style={{'display': '-webkit-box'}}>
+      <ul className='navigation' style={{'display': '-webkit-box', 'paddingLeft': '40%'}}>
       <li><Link to='/industries/banking'>BANKING</Link></li>
       <li><Link to='/industries/insurance'>INSURANCE</Link></li>
       <li><Link to='/industries/retail'>RETAIL</Link></li>
@@ -118,7 +121,7 @@ class Header extends Component {
   techNav () {
     console.log("indus nav bar");
     return (<div onMouseLeave={this.toggleTechMenu}><ul id='indus-nav'>
-      <ul className='navigation' style={{'display': '-webkit-box'}}>
+      <ul className='navigation' style={{'display': '-webkit-box', 'paddingLeft': '50%'}}>
       <li><Link to='/industries/banking'>BANKING</Link></li>
       <li><Link to='/industries/insurance'>INSURANCE</Link></li>
       <li><Link to='/industries/retail'>RETAIL</Link></li>
@@ -130,12 +133,12 @@ class Header extends Component {
     var contents
       contents = <div>
       <ul className='navigation'>
-        <li className=''><Link to='/'>HOME</Link></li>
-        <li className=''><Link to='/discover'>DISCOVER US</Link></li>
+        <li className='' onMouseEnter={this.toggleFalse}><Link to='/'>HOME</Link></li>
+        <li className='' onMouseEnter={this.toggleFalse}><Link to='/discover'>DISCOVER US</Link></li>
         <li className='' onMouseEnter={this.toggleIndusMenu}><Link to='/industries'>INDUSTRIES</Link></li>
         <li className='' onMouseEnter={this.toggleServMenu}><Link to='/services'>SERVICES</Link></li>
         <li className='' onMouseEnter={this.toggleTechMenu}><Link to='/technologies'>TECHNOLOGIES</Link></li>
-        <li className=''><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
+        <li className='' onMouseEnter={this.toggleFalse}><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
       <div className='navigation-mobile'>
         <span className='' onClick={this.toggleMobileMenu} style={{'paddingRight': '2em'}}><Link>&#9776;</Link></span>
