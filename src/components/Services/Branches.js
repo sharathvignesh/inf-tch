@@ -11,33 +11,27 @@ class Branches extends Component {
                 <div>
                   <h2>BUSNIESS OPERATIONS</h2>
                    <p style={{'color': 'white'}}>
-                      Build trust with clients faster than ever before. Customers expect financial
-                      services to provide guidance to help achieve their personal
-                      and professional goals.
+                      Our expertise in technologies combined with in-depth understanding of the industry helps us to develop solutions for improving operational efficiency.
                     </p>
-                    <Link to='industries/banking'><span>Learn more</span></Link>
+                    <Link to='services/business'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='techno'>
                 <div>
                   <h2>TECHNOLOGY OPERATIONS</h2>
                   <p style={{'color': 'white'}}>
-                      The expectation for consistent experiences means having a strategy to
-                      implement and optimize digital engagement with data insights at
-                      every customer touchpoint.
+                      To scale up or scale out, we know exactly how to scale right as our technology knowledge runs deep so your business can reach great heights. 
                     </p>
-                    <Link to='industries/technology'><span>Learn more</span></Link>
+                    <Link to='services/technology'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='consult'>
                 <div>
                   <h2>CONSULTING</h2>
                   <p style={{'color': 'white'}}>
-                      Build trust with clients faster than ever before.
-                      Customers expect financial services to provide guidance to help achieve
-                      their personal and professional goals.
+                      We help to improve your Business model and make profit from emerging opportunities and market dynamics with our domain expertise and proven methodology.
                     </p>
-                    <Link to='industries/insurance'><span>Learn more</span></Link>
+                    <Link to='services/consulting'><span>Learn more</span></Link>
                 </div>
              </div>
            </div>

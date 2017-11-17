@@ -11,6 +11,12 @@ import Tech from './containers/Tech';
 import Travel from './containers/Travel';
 import Technologies from './containers/Technologies';
 import Services from './containers/Services';
+import Salesforce from './containers/Salesforce';
+import Iot from './containers/Iot';
+import Datasolutions from './containers/Datasol';
+import Businessop from './containers/Businessop';
+import Consult from './containers/Consult';
+import Techop from './containers/Techop';
 
 const routes = {
 	component: Base,
@@ -60,8 +66,32 @@ const routes = {
 			component: Technologies
 		},
 		{
+			path: '/technologies/salesforce',
+			component: Salesforce
+		},
+		{
+			path: '/technologies/iot',
+			component: Iot
+		},
+		{
+			path: '/technologies/datasolutions',
+			component: Datasolutions
+		},
+		{
 			path: '/services',
 			component: Services
+		},
+		{
+			path: '/services/business',
+			component: Businessop
+		},
+		{
+			path: '/services/technology',
+			component: Techop
+		},
+		{
+			path: '/services/consulting',
+			component: Consult
 		}
 	]
 };

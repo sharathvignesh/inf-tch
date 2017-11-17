@@ -79,18 +79,18 @@ class Header extends Component {
     else if (menu === 'serv') {
       return (
         <ul id='indus-nav-serv'>
-          <li><Link to='/'>HOME</Link></li>
-          <li><Link to='/discover'>DISCOVER US</Link></li>
-          <li><Link to='/industries'>INDUSTRIES</Link></li>
+          <li><Link to='/services/business'>BUSINESS OPERATIONS</Link></li>
+          <li><Link to='/services/technology'>TECHNOLOGY OPERATIONS</Link></li>
+          <li><Link to='/services/consulting'>CONSULTING</Link></li>
         </ul>
       );
     }
     else if (menu === 'tech') {
       return (
         <ul id='indus-nav-tech'>
-          <li><Link to='/'>HOME</Link></li>
-          <li><Link to='/discover'>DISCOVER US</Link></li>
-          <li><Link to='/industries'>INDUSTRIES</Link></li>
+          <li><Link to='/technologies/salesforce'>SALESFORCE</Link></li>
+          <li><Link to='/technologies/iot'>IOT</Link></li>
+          <li><Link to='/technologies/datasolutions'>DATASOLUTIONS</Link></li>
         </ul>
       );
     }
@@ -112,9 +112,9 @@ class Header extends Component {
     console.log("indus nav bar");
     return (<div onMouseLeave={this.toggleServMenu}><ul id='indus-nav'>
       <ul className='navigation' style={{'display': '-webkit-box', 'paddingLeft': '40%'}}>
-      <li><Link to='/industries/banking'>BANKING</Link></li>
-      <li><Link to='/industries/insurance'>INSURANCE</Link></li>
-      <li><Link to='/industries/retail'>RETAIL</Link></li>
+      <li><Link to='/services/business'>BUSINESS OPERATIONS</Link></li>
+      <li><Link to='/services/technology'>TECHNOLOGY OPERATIONS</Link></li>
+      <li><Link to='/services/consulting'>CONSULTING</Link></li>
       </ul>
     </ul></div>);
   }
@@ -122,9 +122,9 @@ class Header extends Component {
     console.log("indus nav bar");
     return (<div onMouseLeave={this.toggleTechMenu}><ul id='indus-nav'>
       <ul className='navigation' style={{'display': '-webkit-box', 'paddingLeft': '50%'}}>
-      <li><Link to='/industries/banking'>BANKING</Link></li>
-      <li><Link to='/industries/insurance'>INSURANCE</Link></li>
-      <li><Link to='/industries/retail'>RETAIL</Link></li>
+      <li><Link to='/technologies/salesforce'>SALESFORCE</Link></li>
+      <li><Link to='/technologies/iot'>IOT</Link></li>
+      <li><Link to='/technologies/datasolutions'>DATASOLUTIONS</Link></li>
       </ul>
     </ul></div>);
   }

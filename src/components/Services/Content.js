@@ -7,8 +7,9 @@ class Content extends Component {
     return (
         <div id='tech-wrapper'>
           <p>
-Infotech delivers full-cycle Salesforce consulting services to help you embrace the world’s leading CRM platform in the entirety of its benefits for your business.
-We have worked with a variety of industries, delivering precise solutions to grow sales and customer engagement in Banking, Retail, Manufacturing, Media, Public Sector and more.</p>
+            Infotech thrives hard to offer best service to its customers on a wide specturm of areas like Business operations, Technology operations, Consulting etc.
+            Our team of experts leave no stone unturned in providing best services for our cutomers. 
+          </p>
           <br />
             <Branches />
         </div>

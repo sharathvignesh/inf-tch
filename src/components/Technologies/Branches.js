@@ -11,33 +11,27 @@ class Branches extends Component {
                 <div>
                   <h2>SALESFORCE CONSULTANCY</h2>
                    <p style={{'color': 'white'}}>
-                      Build trust with clients faster than ever before. Customers expect financial
-                      services to provide guidance to help achieve their personal
-                      and professional goals.
+                      Infotech delivers full-cycle Salesforce consulting services to help you embrace the world’s leading CRM platform in the entirety of its benefits for your business.
                     </p>
-                    <Link to='industries/banking'><span>Learn more</span></Link>
+                    <Link to='technologies/salesforce'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='iot-con'>
                 <div>
                   <h2>IOT CONSULTANCY</h2>
                   <p style={{'color': 'white'}}>
-                      The expectation for consistent experiences means having a strategy to
-                      implement and optimize digital engagement with data insights at
-                      every customer touchpoint.
+                      A common first step toward the Internet of Things is recognizing all objects uniquely through sensors. Unlike other app development projects, IoT is a little different.
                     </p>
-                    <Link to='industries/technology'><span>Learn more</span></Link>
+                    <Link to='technologies/iot'><span>Learn more</span></Link>
                 </div>
              </div>
              <div className='branches-card' id='data-sol'>
                 <div>
                   <h2>DATA SOLUTIONS</h2>
                   <p style={{'color': 'white'}}>
-                      Build trust with clients faster than ever before.
-                      Customers expect financial services to provide guidance to help achieve
-                      their personal and professional goals.
+                      Infotech has been rendering data analytics services that help companies flourish. Aiming to convert historical and real-time data into insights, as well as design accurate forecasting tools.
                     </p>
-                    <Link to='industries/insurance'><span>Learn more</span></Link>
+                    <Link to='technologies/datasolutions'><span>Learn more</span></Link>
                 </div>
              </div>
            </div>
