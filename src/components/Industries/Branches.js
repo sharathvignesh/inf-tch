@@ -12,9 +12,9 @@ class Branches extends Component {
                 <div>
                   <h2>BANKING & FINANCIAL SERVICES</h2>
                    <p style={{'color': 'white'}}>
-                      Build trust with clients faster than ever before. Customers expect financial
-                      services to provide guidance to help achieve their personal
-                      and professional goals.
+                     With Banking sector on distruption, machine learning playing a key
+                     role in wealth management and cryptocurrency like bitcoin threatening the traditional banking
+                     establishments,
                     </p>
                     <Link to='industries/banking'><span>Learn more</span></Link>
                 </div>
@@ -34,9 +34,7 @@ class Branches extends Component {
                 <div>
                   <h2>INSURANCE</h2>
                   <p style={{'color': 'white'}}>
-                      Build trust with clients faster than ever before.
-                      Customers expect financial services to provide guidance to help achieve
-                      their personal and professional goals.
+                      We help customers rethink Insurance for a Digital World, helping them innovate, gain agility and compete in a customer-driven digital world
                     </p>
                     <Link to='industries/insurance'><span>Learn more</span></Link>
                 </div>
@@ -45,9 +43,7 @@ class Branches extends Component {
                 <div>
                   <h2>RETAIL</h2>
                   <p style={{'color': 'white'}}>
-                      Customers expect your service & sales to service their needs anytime,
-                      from anywhere – beyond the point of sale. Our expertise streamlines
-                      processes and systems, so you can provide a seamless customer experience.
+                      We help retailers deliver great buying experiences to digital-savvy customers.
                     </p>
                     <Link to='industries/retail'><span>Learn more</span></Link>
                 </div>
@@ -56,9 +52,7 @@ class Branches extends Component {
                 <div>
                   <h2>SMART AIRPORTS / TRAVEL</h2>
                   <p style={{'color': 'white'}}>
-                      With AI-driven business models radically disrupting every market,
-                      it’s critical that companies of all sizes integrate, innovate,
-                      and bring new integrated systems to capture and retain market share.
+                      To remain competitive in Travel industry, you need to ensure that your IT systems and business processes were more efficient, flexible, and reliable.
                     </p>
                     <Link to='industries/travel'><span>Learn more</span></Link>
                 </div>

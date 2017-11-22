@@ -6,7 +6,10 @@ class Insurance extends Component {
     return (
         <div id='tech-wrapper'>
           <h1>Banking</h1>
-          <p>We help customers rethink Insurance for a Digital World, helping them innovate, gain agility and compete in a customer-driven digital world. We build future proof solutions so that our customers can have a platform they can rely on and one that is going to work for them for a long period of time. Our customers commend us for helping them drive their business objective better as our teams are always involved as if it is our own business. Our sense of ownership standsout among our competitors.</p>
+          <p>With Banking sector on distruption, machine learning playing a key
+          role in wealth management and cryptocurrency like bitcoin threatening the traditional banking
+          establishments, you need an expert in the field to manage IT roadmap of your banking and financial business.
+        Contact our sales professional to know how we helped some leading banks and what we can offer to your business.</p>
            <br />
            <hr />
         </div>

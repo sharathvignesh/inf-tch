@@ -6,7 +6,7 @@ class Insurance extends Component {
     return (
         <div id='tech-wrapper'>
           <h1>TELECOMMUNICATION & TECHNOLOGY</h1>
-          <p>We help customers rethink Insurance for a Digital World, helping them innovate, gain agility and compete in a customer-driven digital world. We build future proof solutions so that our customers can have a platform they can rely on and one that is going to work for them for a long period of time. Our customers commend us for helping them drive their business objective better as our teams are always involved as if it is our own business. Our sense of ownership standsout among our competitors.</p>
+          <p>As a strategic IT partner, we helped our Telecom customers build new products and services. The systems integration programs across business units helped establish a single version of truth and improve accountability and automation of business processes improved the productivity. These initiatives have delivered real business value and enhanced the company's revenue, operational efficiency, and customer experience.</p>
            <br />
            <hr />
         </div>
