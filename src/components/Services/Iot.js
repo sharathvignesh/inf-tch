@@ -5,7 +5,7 @@ class Iot extends Component {
   render () {
     return (
         <div id='tech-wrapper'>
-          <h1>IOT Consultancy</h1>
+          <h1>Internet of Things</h1>
           <p>
             A common first step toward the Internet of Things is recognizing all objects uniquely through sensors. Unlike other app development projects, IoT is a little different. Instead of just a front-end and backend, there is usually a smart device (hardware), front-end app and the communication platform. With our comprehensive IOT development service offerings, we can help you with prototyping of hardware design, build the backend layer, and the user-facing app.
           </p>

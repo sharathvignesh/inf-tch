@@ -141,7 +141,7 @@ class Header extends Component {
         <li className='' onMouseEnter={this.toggleFalse}><Link to='/contact' id='contact_us_header'>CONTACT US</Link></li>
       </ul>
       <div className='navigation-mobile'>
-        <span className='' onClick={this.toggleMobileMenu} style={{'paddingRight': '2em'}}><Link>&#9776;</Link></span>
+        <span className='' onClick={this.toggleMobileMenu} style={{'paddingRight': '2em'}}><Link style={{'color': 'white'}}>&#9776;</Link></span>
       </div>
 
     </div>

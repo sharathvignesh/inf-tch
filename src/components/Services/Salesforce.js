@@ -5,7 +5,7 @@ class Salesforce extends Component {
   render () {
     return (
         <div id='tech-wrapper'>
-          <h1>Sales force</h1>
+          <h1>Salesforce</h1>
           <p>
 Infotech delivers full-cycle Salesforce consulting services to help you embrace the world’s leading CRM platform in the entirety of its benefits for your business.</p>
         <p>We have worked with a variety of industries, delivering precise solutions to grow sales and customer engagement in Banking, Retail, Manufacturing, Media, Public Sector and more.</p>
