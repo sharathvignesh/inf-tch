@@ -9,7 +9,7 @@ class Branches extends Component {
            <div className='tech-logo-row'>
              <div className='branches-card' id='sales'>
                 <div>
-                  <h2>SALESFORCE CONSULTANCY</h2>
+                  <h2>SALESFORCE</h2>
                    <p style={{'color': 'white'}}>
                       Infotech delivers full-cycle Salesforce consulting services to help you embrace the world’s leading CRM platform in the entirety of its benefits for your business.
                     </p>
@@ -18,7 +18,7 @@ class Branches extends Component {
              </div>
              <div className='branches-card' id='iot-con'>
                 <div>
-                  <h2>IOT CONSULTANCY</h2>
+                  <h2>INTERNET OF THINGS</h2>
                   <p style={{'color': 'white'}}>
                       A common first step toward the Internet of Things is recognizing all objects uniquely through sensors. Unlike other app development projects, IoT is a little different.
                     </p>
